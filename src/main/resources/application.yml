@@ -7,5 +7,6 @@ spring:
     username: flyway
     password: flyway
   flyway:
+    enabled: true
     validate-migration-naming: true
     baseline-on-migrate: true
