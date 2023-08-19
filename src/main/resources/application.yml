@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flyway
+    username: flyway
+    password: flyway
+  flyway:
+    validate-migration-naming: true
+    baseline-on-migrate: true
