@@ -17,6 +17,6 @@ public class Dog {
 
     @NotNull
     @NotBlank
-    @Size(min = 1, max = 100)
+    @Size(min = 1, max = 200)
     private String name;
 }
