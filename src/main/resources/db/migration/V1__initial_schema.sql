@@ -14,10 +14,7 @@ create table venue
 (
     id              bigserial
         primary key,
-    approval_status varchar(255) not null
-        constraint venue_approval_status_check
-            check ((approval_status)::text = ANY
-                   ((ARRAY ['PENDING'::character varying, 'APPROVED'::character varying, 'REJECTED'::character varying])::text[])),
+    approval_status varchar(255) not null,
     name            varchar(100) not null
         constraint uk_9uyuoc3vs9lv1qpae6j8q40xe
             unique,
