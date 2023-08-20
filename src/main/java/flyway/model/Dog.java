@@ -21,8 +21,8 @@ public class Dog {
     private String name;
 
     @NotNull
-    @Min(1)
-    @Max(200)
+    @Min(10)
+    @Max(100)
     @Digits(integer = 3, fraction = 1)
     private BigDecimal heightInCm;
 }
